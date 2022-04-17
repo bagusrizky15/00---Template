@@ -4,6 +4,21 @@ class Mahasiswa {
     Integer nim;
 }
 
+class Dosen{
+    String nama;
+    String NIK;
+
+
+    //constructor dengan parameter
+    Dosen(String inputNama, String inputNIK){
+        nama = inputNama;
+        NIK = inputNIK;
+
+        System.out.println(nama);
+        System.out.println(NIK);
+    }
+}
+
 public class main{
 
     public static void main(String[] args) {
@@ -22,6 +37,11 @@ public class main{
 
         System.out.println(mahasiswa2.nama);
         System.out.println(mahasiswa2.nim);
+
+        Dosen dosen1 = new Dosen("Ngadiman", "19201");
+        Dosen dosen2 = new Dosen("Sas", "2292");
+
+    
 
     }
 }
